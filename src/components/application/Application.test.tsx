@@ -55,7 +55,7 @@ describe("Application", () => {
     expect(termsElement).toBeInTheDocument();
 
     const termsElement2 = screen.getByLabelText(
-      "I agree to the terms and conditions"
+      "I agree to the terms and conditions",
     );
     expect(termsElement2).toBeInTheDocument();
 

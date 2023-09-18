@@ -22,8 +22,8 @@ describe("Users", () => {
         "https://jsonplaceholder.typicode.com/users",
         (req, res, ctx) => {
           return res(ctx.status(500));
-        }
-      )
+        },
+      ),
     );
     render(<Users />);
     const error = await screen.findByText("Error fetching users");
